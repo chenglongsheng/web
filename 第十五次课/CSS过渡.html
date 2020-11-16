@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS过渡</title>
+    <style>
+        #wrapper {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border: 10px solid green;
+        }
+
+        #wrapper:hover {
+            width: 500px;
+            height: 400px;
+            transition: all ease 5s 3s;
+        }
+    </style>
+</head>
+
+<body onload="init()">
+    <div id="wrapper"></div>
+    <script>
+        function init() {
+            var target = window.document.getElementById("wrapper");
+            target.style.backgroundColor = "blue";
+        }
+        // 浏览器是单线程
+        var a = 3;
+        var b = "asb";
+        var c = true;
+        var d = null;
+        var e = undefined;
+        var f = functionf();
+        var g = {};
+    </script>
+
+</body>
+
+</html>

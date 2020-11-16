@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <!-- 
+        BFC
+        格式化上下文
+     -->
+    <style>
+        #wrapper {
+            border: 5px solid green;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        #right {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+        }
+
+        #middle {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+
+        #left {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="right"></div>
+        <div id="middle"></div>
+        <div id="left"></div>
+    </div>
+</body>
+
+</html>
