@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>换样式</title>
+    <link id="mystyle" rel="stylesheet" href="./index1.css">
+</head>
+<body>
+    <div id="wrapper"></div>
+    <button id="myclick">换肤</button>
+    <script>
+        var myclickTarget = window.document.getElementById("myclick")
+        myclickTarget.onclick = function(){
+            var styleTarget = window.document.getElementById("mystyle")
+            styleTarget.href = "index2.css"
+        }
+    </script>
+</body>
+</html>
