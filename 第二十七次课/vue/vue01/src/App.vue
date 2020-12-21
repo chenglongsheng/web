@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <!-- <img src="./assets/logo.png"> -->
     <My/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+
 import My from './components/Myvue'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     My
   }
 }
