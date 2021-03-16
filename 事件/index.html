@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+        }
+        #wrapper{
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper"></div>
+    <script>
+        window.addEventListener("click", function () {
+            console.log("this is click")
+        })
+        window.onclick = function(){}
+        var target = document.getElementById("wrapper")
+        // window.addEventListener("mousemove",function(event){
+        //     console.log(event.x + " | " + event.y)
+        //     console.log(event.clientX + " * "+event.clientY)
+        //     target.style.top=event.y+"px"
+        //     target.style.left=event.x+"px"
+        // })
+        window.addEventListener("mouseout",function(){
+            console.log("mouse is out")
+            target.style.backgroundColor="yellow";
+        })
+        
+    </script>
+</body>
+
+</html>

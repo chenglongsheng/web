@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <My/>
+    <!-- <My/> -->
+    <Student/>
   </div>
 </template>
 
 <script>
 
-import My from './components/Myvue'
+// import My from './components/Myvue'
+import Student from './components/Student.vue'
+import axios from 'axios'
 export default {
   name: 'App',
   components: {
-    My
+    Student
   }
 }
 </script>

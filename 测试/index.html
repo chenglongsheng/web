@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随堂测试</title>
+    <style>
+        #wrapper {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper"></div>
+    <script>
+        var target = document.getElementById('wrapper')
+        target.onmouseenter = function () {
+            target.style.background = "red"
+        }
+        target.onmouseleave = function () {
+            target.style.background = "yellow"
+        }
+        target.addEventListener('click',function(){
+            target.style.background="blue"
+            target.style.height=target.clientHeight+200+"px"
+            target.style.width=target.clientWidth+200+"px"
+        })
+    </script>
+</body>
+
+</html>

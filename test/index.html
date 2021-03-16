@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单验证</title>
+    <style>
+        #title{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td id="title">您的Email：</td>
+                <td><input type="text"></td>
+                <td><span class="warn"></span></td>
+            </tr>
+            <tr>
+                <td id="title">输入密码：</td>
+                <td><input type="text"></td>
+                <td><span class="warn"></span></td>
+            </tr>
+            <tr>
+                <td id="title">再次输入密码：</td>
+                <td><input type="text"></td>
+                <td>
+                    <warn class="warn"></warn>
+                </td>
+            </tr>
+            <tr>
+                <td id="title">您的姓名：</td>
+                <td><input type="text"></td>
+                <td><span class="warn"></span></td>
+            </tr>
+            <tr>
+                <td id="title">性别：</td>
+                <td>
+                    <input type="radio" name="sex" id="sex" value="男" checked>男
+                    <input type="radio" name="sex" id="sex" value="女">女
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="title">出生日期:</td>
+                <td>
+                    <input type="nYear">
+                    <span>年</span>
+                    <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <span>月</span>
+
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
